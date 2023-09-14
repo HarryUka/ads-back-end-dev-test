@@ -17,8 +17,7 @@ To run this application, you will need:
 
 1. Clone the repository to your local machine.
 ```bash
-git clone https://github.com/HarryUka/AddressBookApplication.git
-
+git clone https://github.com/HarryUka/ads-back-end-dev-test.git
 2. Compile the Kotlin source files.
 ```bash
 kotlinc src -include-runtime -d address-book.jar
