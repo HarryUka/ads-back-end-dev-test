@@ -1,24 +1,35 @@
-# ADS Backend Assessment
-Complete the project TODO's to demonstrate an understanding of SQL, XML, JSON, and the JVM.
+# AddressBookApplication
+This is a Kotlin application for managing an address book. It loads contact information from an XML file, stores it in an SQLite database, and provides functionality to retrieve and export contacts in JSON format.
 
-## Project Overview
-The project includes an XML source ab.xml containing an AddressBook populated with Contacts. 
-1. Design Contact SQL Schema and define table and CRUD statements
-1. Load the XML file into memory
-1. Parse the contents of the AddressBook into Kotlin objects
-1. Insert Contacts from parsed AddressBook into SQLite
-1. Retrieve all Contacts from SQLite and write them to a file.
+## Getting Started
 
-## Extra Credit
-For additional credits:
-1. Write quality tests that verify independent component functionality
-2. Document all methods and classes
-3. Further optimize DatabaseHandler to be more performant
-4. Add handling to support insertion of a Contact that already exists
-5. Protect your SQL statements from SQL Injection
-6. Add support for column addition to the Contact table
-7. Use coroutines where applicable to make the application more performant
+These instructions will help you set up and run the application on your local machine.
 
+### Prerequisites
 
-## Constraints
-1. No new libraries shall be added to complete the assessment
+To run this application, you will need:
+
+- Java Development Kit (JDK) installed
+- Kotlin Compiler (Kotlinc) installed
+- SQLite
+
+### Installing
+
+1. Clone the repository to your local machine.
+```bash
+git clone https://github.com/HarryUka/AddressBookApplication.git
+
+2. Compile the Kotlin source files.
+```bash
+kotlinc src -include-runtime -d address-book.jar
+
+3. Run the application.
+```bash
+java -jar address-book.jar
+
+### Usage
+The application will load the ab.xml file located in the resources directory.
+
+Contact information will be inserted into an SQLite database.
+
+You can retrieve all contacts from the database, convert them to JSON, and save the output in output.json.
